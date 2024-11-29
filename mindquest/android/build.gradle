@@ -1,0 +1,20 @@
+buildscript {
+    repositories {
+        google()  // Repositório do Google
+        mavenCentral()
+    }
+    dependencies {
+        // Classpath para o Google Services
+        classpath 'com.google.gms:google-services:4.3.15'
+
+        // Outras dependências necessárias
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+allprojects {
+    repositories {
+        google()  // Repositório do Google
+        mavenCentral()
+    }
+}

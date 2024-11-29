@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "585667292390",
+    "project_id": "mindquest-8008f",
+    "storage_bucket": "mindquest-8008f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:585667292390:android:1da50c8c9683e351569f27",
+        "android_client_info": {
+          "package_name": "mindquest.android22"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXSWC4fpwnO5ggABQRGdAWZQ7rF59VAQ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,43 @@
+// android/app/build.gradle
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    // O Flutter Gradle Plugin deve ser aplicado depois do plugin Android e Kotlin
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+// Certifique-se de adicionar o plugin do Google Services
+apply plugin: 'com.google.gms.google-services'  // Adicione esta linha aqui
+
+android {
+    namespace = "com.example.mindquest"
+    compileSdk = flutter.compileSdkVersion
+    ndkVersion = flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId = "com.example.mindquest"
+        minSdk = flutter.minSdkVersion
+        targetSdk = flutter.targetSdkVersion
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
+    }
+
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.debug  // Para testes, use a configuração de debug
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}
