@@ -203,3 +203,6 @@ rankings/
 
 - Yago Gabriel Mendes Rodrigues 
 -- RA: 32322332
+
+- Douglas Victor Lopes Rocha
+-- RA: 122320165
